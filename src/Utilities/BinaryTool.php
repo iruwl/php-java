@@ -52,31 +52,6 @@ class BinaryTool
         return '-' . base_convert(self::addOneBit(self::reverseBits($convert)), 2, 10);
     }
 
-    final public static function negate($value)
-    {
-        return $value * -1;
-    }
-
-    final public static function multiply($value1, $value2)
-    {
-        return $value1 * $value2;
-    }
-
-    final public static function add($value1, $value2)
-    {
-        return $value1 + $value2;
-    }
-
-    final public static function sub($value1, $value2)
-    {
-        return $value1 - $value2;
-    }
-
-    final public static function div($value1, $value2)
-    {
-        return $value1 / $value2;
-    }
-
     final public static function shiftLeft($value1, $value2)
     {
         $value1 = (int) $value1;
